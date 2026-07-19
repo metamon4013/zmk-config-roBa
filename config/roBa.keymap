@@ -12,18 +12,6 @@
 
 &trackball {
     automouse-layer = <4>;
-
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
 };
 
 / {
@@ -140,8 +128,8 @@
             bindings = <
 &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &trans          &kp HOME          &kp UP       &kp END       &trans
 &to 0           &to 1          &to 2           &to 3           &to 4          &trans      &trans       &trans          &kp LEFT          &kp DOWN     &kp RIGHT     &trans
-&trans          &trans         &trans          &trans          &trans         &trans      &bootloader  &bt BT_CLR      &bt BT_CLR_ALL    &trans       &trans        &trans
-&trans          &trans         &trans          &trans          &mkp RCLK      &mkp LCLK   &trans       &trans                                                       &trans
+&trans          &trans         &trans          &trans          &trans         &trans      &trans       &trans          &trans            &trans       &trans        &trans
+&bootloader  &bt BT_CLR      &bt BT_CLR_ALL    &trans          &mkp RCLK      &mkp LCLK   &trans       &trans                                                       &trans
             >;
         };
     };
