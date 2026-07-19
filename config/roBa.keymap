@@ -11,7 +11,7 @@
 };
 
 &trackball {
-    automouse-layer = <2>;
+    automouse-layer = <4>;
 
     // arrows {
     //     layers = <3>;
@@ -30,6 +30,11 @@
     combos {
         compatible = "zmk,combos";
 
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <01 02>;
+        };
+
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
@@ -40,41 +45,43 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        parenthesises {
+            bindings = <&parenthesises>;
+            key-positions = <19 20>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        brackets {
+            bindings = <&brackets>;
+            key-positions = <07 08>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        braces {
+            bindings = <&braces>;
+            key-positions = <31 32>;
         };
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        parenthesises: parenthesises {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+        };
+
+        braces: braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
         };
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
@@ -89,10 +96,10 @@
 
         QWERTY {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                         &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &trans          &kp MINUS        &kp H          &kp J  &kp K      &kp L    &kp PLUS
-&kp Z             &kp X         &kp C         &kp V                        &kp B        &kp LEFT_WIN    &kp SEMICOLON    &kp N          &kp M  &kp COMMA  &kp DOT  &kp QUESTION
-&kp LEFT_SHIFT    &kp LCTRL     &kp LEFT_ALT  &lt_to_layer_0 2 INT_HENKAN  &kp GRAVE    &kp SPACE       &kp BACKSPACE    &kp ENTER                                 &kp DEL
+&kp Q             &kp W         &kp E         &kp R     &kp T                                             &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F     &kp G          &trans            &kp SLASH        &kp H          &kp J  &kp K      &kp L    &kp BACKSPACE
+&kp Z             &kp X         &kp C         &kp V     &kp B          &trans            &kp MINUS        &kp N          &kp M  &kp COMMA  &kp DOT  &kp DEL
+&kp LEFT_SHIFT    &kp LCTRL     &trans        &tog 1    &lt 2 LANG2    &lt 3 LANG1       &kp SPACE    &kp ENTER                                     &lt 4 LEFT_WIN
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -103,18 +110,38 @@
 &kp Q    &kp L     &kp U    &kp COMMA   &kp DOT                              &kp F  &kp W  &kp R  &kp Y  &kp P
 &kp E    &kp I     &kp A    &kp O       &kp MINUS       &trans     &trans    &kp K  &kp T  &kp N  &kp S  &kp H
 &kp Z    &kp X     &kp C    &kp V       &kp SEMICOLON   &trans     &trans    &kp G  &kp D  &kp M  &kp J  &kp B
-&trans   &trans    &trans   &trans      &trans          &trans     &trans    &trans                      &trans
+&trans   &trans    &trans   &tog 0      &trans          &trans     &trans    &trans                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        SUB {
+        SYMBOL {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &trans          &kp HOME     &kp UP       &kp END       &trans
-&to 0           &to 1          &to 2           &trans          &trans         &trans      &trans       &trans          &kp LEFT     &kp DOWN     &kp RIGHT     &trans
-&kp N1          &kp N2         &kp N3          &kp N4          &kp N5         &trans      &bootloader  &kp N6          &kp N7       &kp N8       &kp N9        &kp N0
-&trans          &trans         &trans          &trans          &mkp RCLK      &mkp LCLK   &bt BT_CLR   &bt BT_CLR_ALL                                          &trans
+&trans            &trans        &trans        &kp SINGLE_QUOTE      &kp EXCLAMATION                                 &trans           &trans           &kp LESS_THAN    &kp GREATER_THAN    &trans
+&trans            &trans        &trans        &kp DOUBLE_QUOTES     &kp QUESTION     &trans        &trans           &kp COLON        &kp PLUS         &kp MINUS        &kp TILDE           &kp BACKSPACE
+&trans            &trans        &trans        &kp GRAVE             &kp AT_SIGN      &trans        &trans           &kp SEMICOLON    &kp ASTERISK     &kp SLASH        &kp EQUAL           &kp DEL
+&kp LEFT_SHIFT    &kp LCTRL     &trans        &trans                &kp INT_HENKAN   &kp SPACE     &kp BACKSPACE    &kp ENTER                                                              &trans
+            >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
+        };
+
+        NUM {
+            bindings = <
+&trans    &trans    &trans    &trans    &trans                          &trans     &kp LEFT    &kp UP     &kp DOWN    &kp RIGHT
+&kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans    &trans      &kp N6     &kp N7      &kp N8     &kp N9      &kp N10
+&kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7      &kp F8     &kp F9      &kp F10    &kp F11     &kp F12
+&trans    &trans    &trans    &trans    &trans    &trans    &kp HOME    &kp END                                       &trans
+            >;
+        };
+
+        FUNCTION {
+            bindings = <
+&bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &trans          &kp HOME          &kp UP       &kp END       &trans
+&to 0           &to 1          &to 2           &to 3           &to 4          &trans      &trans       &trans          &kp LEFT          &kp DOWN     &kp RIGHT     &trans
+&trans          &trans         &trans          &trans          &trans         &trans      &bootloader  &bt BT_CLR      &bt BT_CLR_ALL    &trans       &trans        &trans
+&trans          &trans         &trans          &trans          &mkp RCLK      &mkp LCLK   &trans       &trans                                                       &trans
             >;
         };
     };
