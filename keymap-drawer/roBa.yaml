@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - ENTER
+  - DEL
   - Z
   - X
   - C
@@ -37,12 +37,12 @@ layers:
   - .
   - LEFT SHIFT
   - LCTRL
-  - ''
+  - LEFT WIN
   - {t: LANG2, h: SYMBOL}
   - {t: LANG1, h: NUM}
   - SPACE
-  - DEL
   - BACKSPACE
+  - ENTER
   - {t: LEFT WIN, h: FUNCTION}
   OHNISHI:
   - Q
@@ -81,7 +81,7 @@ layers:
   - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -116,7 +116,7 @@ layers:
   - UP
   - RIGHT
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - '1'
   - '2'
@@ -125,7 +125,7 @@ layers:
   - '5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -160,7 +160,7 @@ layers:
   - _
   - '`'
   - '@'
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ;
   - '*'
@@ -169,7 +169,7 @@ layers:
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -204,7 +204,7 @@ layers:
   - F11
   - F12
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - LEFT
@@ -213,7 +213,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp LCLK'
