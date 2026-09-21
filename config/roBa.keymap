@@ -132,7 +132,7 @@
             bindings = < 
 &kp Q    &kp L     &kp U    &kp COMMA   &kp DOT                              &kp F  &kp W  &kp R  &kp Y  &kp P
 &kp E    &kp I     &kp A    &kp O       &kp MINUS       &none      &none     &kp K  &kp T  &kp N  &kp S  &kp H
-&kp Z    &kp X     &kp C    &kp V       &kp SEMICOLON   &tog 0     &none     &kp G  &kp D  &kp M  &kp J  &kp B
+&kp Z    &kp X     &kp C    &kp V       &kp SEMICOLON   &tog 1     &none     &kp G  &kp D  &kp M  &kp J  &kp B
 &trans   &trans    &trans   &trans      &trans          &trans     &trans    &trans                      &trans
             >;
 

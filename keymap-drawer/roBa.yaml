@@ -72,7 +72,7 @@ layers:
   - C
   - V
   - ;
-  - {t: QWERTY, h: toggle}
+  - {t: OHNISHI, h: toggle}
   - ''
   - G
   - D
