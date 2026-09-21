@@ -88,19 +88,19 @@
         parenthesises: parenthesises {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT_ARROW>;
         };
 
         braces: braces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(BACKSLASH) &kp LEFT_ARROW>;
         };
 
         brackets: brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            bindings = <&kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT_ARROW>;
         };
     };
 
@@ -152,9 +152,9 @@
 
         SYMBOL {
             bindings = <
-&none             &none         &kp CARET         &kp SINGLE_QUOTE      &kp EXCLAMATION                                 &none            &none            &kp LESS_THAN    &kp GREATER_THAN    &kp BACKSLASH
-&none             &none         &kp TILDE         &kp DOUBLE_QUOTES     &kp QUESTION     &none         &none            &kp COLON        &kp PLUS         &kp MINUS        &kp TILDE           &kp BACKSPACE
-&none             &none         &kp UNDERSCORE    &kp GRAVE             &kp AT_SIGN      &trans        &none            &kp SEMICOLON    &kp ASTERISK     &kp SLASH        &kp EQUAL           &kp DEL
+&none    &none    &kp EQUAL            &kp LS(N7)              &kp LS(N1)                                    &none                &kp LS(COMMA)           &kp LS(DOT)     &kp INT_YEN        &none
+&none    &none    &kp LS(EQUAL)        &kp LS(N2)              &kp LS(SLASH)    &none    &none            &kp SINGLE_QUOTE     &kp LS(SEMICOLON)       &kp MINUS       &kp LS(INT_YEN)    &kp BACKSPACE
+&none    &none    &kp LS(INT_RO)       &kp LS(LEFT_BRACKET)    &kp LEFT_BRACKET &trans   &none            &kp SEMICOLON        &kp LS(SINGLE_QUOTE)    &kp SLASH       &kp LS(MINUS)      &kp DEL
 &trans            &trans        &trans        &trans                &trans           &trans        &trans           &trans                                                                 &trans
             >;
 

@@ -135,37 +135,37 @@ layers:
   SYMBOL:
   - ''
   - ''
-  - ^
+  - '='
+  - Sft+7
+  - Sft+1
+  - ''
+  - Sft+,
+  - Sft+.
+  - INT YEN
+  - ''
+  - ''
+  - ''
+  - Sft+=
+  - Sft+2
+  - Sft+/
+  - ''
+  - ''
   - ''''
-  - '!'
-  - ''
-  - ''
-  - <
-  - '>'
-  - \
-  - ''
-  - ''
-  - '~'
-  - '"'
-  - '?'
-  - ''
-  - ''
-  - ':'
-  - +
+  - Sft+;
   - '-'
-  - '~'
+  - Sft+INT YEN
   - BACKSPACE
   - ''
   - ''
-  - _
-  - '`'
-  - '@'
+  - Sft+INT RO
+  - Sft+[
+  - '['
   - {t: ▽, type: trans}
   - ''
   - ;
-  - '*'
+  - Sft+'
   - /
-  - '='
+  - Sft+-
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
