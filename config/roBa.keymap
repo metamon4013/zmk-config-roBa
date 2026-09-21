@@ -47,6 +47,34 @@
             bindings = <&braces>;
             key-positions = <31 32>;
         };
+
+        system_layer {
+            bindings = <&mo 5>;
+            key-positions = <22 23>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        bt_clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <5 6>;
+            layers = <5>;
+            timeout-ms = <50>;
+        };
+
+        bt_clr_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <5 9>;
+            layers = <5>;
+            timeout-ms = <50>;
+        };
+
+        boot {
+            bindings = <&bootloader>;
+            key-positions = <8 9>;
+            layers = <5>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
@@ -126,10 +154,19 @@
 
         FUNCTION {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &trans          &kp HOME          &kp UP       &kp END       &trans
-&to 0           &to 1          &to 2           &to 3           &to 4          &trans      &trans       &trans          &kp LEFT          &kp DOWN     &kp RIGHT     &trans
-&trans          &trans         &trans          &trans          &trans         &trans      &trans       &trans          &trans            &trans       &trans        &trans
-&bootloader  &bt BT_CLR      &bt BT_CLR_ALL    &trans          &mkp RCLK      &mkp LCLK   &trans       &trans                                                       &trans
+&trans    &trans    &trans    &trans    &trans                              &trans    &kp HOME    &kp UP      &kp END      &trans
+&trans    &trans    &trans    &trans    &trans    &trans      &trans        &trans    &kp LEFT    &kp DOWN    &kp RIGHT    &trans
+&trans    &trans    &trans    &trans    &trans    &trans      &trans        &trans    &trans      &trans      &trans       &trans
+&trans    &trans    &trans    &trans    &mkp RCLK    &mkp LCLK    &trans    &trans                                         &trans
+            >;
+        };
+
+        SYSTEM {
+            bindings = <
+&none    &none    &none    &none    &none                            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4
+&to 0    &to 1    &to 2    &to 3    &none    &none      &none        &none           &none           &none           &none           &none
+&none    &none    &none    &none    &none    &none      &none        &none           &none           &none           &none           &none
+&none    &none    &none    &none    &none    &none      &none        &none                                                           &none
             >;
         };
     };
