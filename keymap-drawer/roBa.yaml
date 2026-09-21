@@ -16,33 +16,33 @@ layers:
   - D
   - F
   - G
-  - {t: ▽, type: trans}
-  - /
+  - ''
+  - ''
   - H
   - J
   - K
   - L
-  - BACKSPACE
+  - ENTER
   - Z
   - X
   - C
   - V
   - B
-  - {t: ▽, type: trans}
-  - '-'
+  - {t: OHNISHI, h: toggle}
+  - ''
   - N
   - M
+  - '-'
   - ','
   - .
-  - DEL
   - LEFT SHIFT
   - LCTRL
-  - {t: ▽, type: trans}
-  - {t: OHNISHI, h: toggle}
+  - ''
   - {t: LANG2, h: SYMBOL}
   - {t: LANG1, h: NUM}
   - SPACE
-  - ENTER
+  - DEL
+  - BACKSPACE
   - {t: LEFT WIN, h: FUNCTION}
   OHNISHI:
   - Q
@@ -60,8 +60,8 @@ layers:
   - A
   - O
   - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - K
   - T
   - N
@@ -72,8 +72,8 @@ layers:
   - C
   - V
   - ;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: QWERTY, h: toggle}
+  - ''
   - G
   - D
   - M
@@ -81,68 +81,43 @@ layers:
   - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: QWERTY, h: toggle}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYMBOL:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''''
-  - '!'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - <
-  - '>'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '"'
-  - '?'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ':'
-  - +
-  - '-'
-  - '~'
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - '@'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ;
-  - '*'
-  - /
-  - '='
-  - DEL
-  - LEFT SHIFT
-  - LCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: INT HENKAN, type: held}
-  - SPACE
-  - BACKSPACE
-  - ENTER
   - {t: ▽, type: trans}
   NUM:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - LEFT
-  - UP
   - DOWN
+  - UP
   - RIGHT
+  - ''
+  - ''
+  - ''
   - '1'
   - '2'
   - '3'
@@ -150,72 +125,97 @@ layers:
   - '5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYMBOL:
+  - ''
+  - ''
+  - ^
+  - ''''
+  - '!'
+  - ''
+  - ''
+  - <
+  - '>'
+  - \
+  - ''
+  - ''
+  - '~'
+  - '"'
+  - '?'
+  - ''
+  - ''
+  - ':'
+  - +
+  - '-'
+  - '~'
+  - BACKSPACE
+  - ''
+  - ''
+  - _
+  - '`'
+  - '@'
+  - ''
+  - ''
+  - ;
+  - '*'
+  - /
+  - '='
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  FUNCTION:
   - F1
   - F2
   - F3
   - F4
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F5
   - F6
   - F7
   - F8
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - UP
+  - END
+  - ''
   - F9
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - HOME
-  - END
-  - {t: ▽, type: trans}
-  FUNCTION:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - UP
-  - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - LEFT
   - DOWN
   - RIGHT
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp RCLK'
   - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -233,8 +233,8 @@ layers:
   - {t: BT, h: '4'}
   - {t: QWERTY, h: toggle}
   - {t: OHNISHI, h: toggle}
-  - {t: SYMBOL, h: toggle}
-  - {t: NUM, h: toggle}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -289,3 +289,6 @@ combos:
 - p: [8, 9]
   k: '&bootloader'
   l: [SYSTEM]
+- p: [38, 39]
+  k: '&mkp RCLK'
+  l: [FUNCTION]
