@@ -38,8 +38,8 @@ layers:
   - LEFT SHIFT
   - LCTRL
   - LEFT WIN
-  - {t: LANG2, h: SYMBOL}
-  - {t: LANG1, h: NUM}
+  - {t: LANG2, h: NUM}
+  - {t: LANG1, h: SYMBOL}
   - SPACE
   - BACKSPACE
   - ENTER
@@ -126,8 +126,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -170,8 +170,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
