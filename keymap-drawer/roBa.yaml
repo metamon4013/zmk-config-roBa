@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - ''
-  - ''
+  - {t: OHNISHI, h: toggle}
   - H
   - J
   - K
@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - LCTRL
-  - {t: OHNISHI, h: toggle}
+  - ''
   - N
   - M
   - '-'
@@ -61,7 +61,7 @@ layers:
   - O
   - ','
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - K
   - T
   - N
