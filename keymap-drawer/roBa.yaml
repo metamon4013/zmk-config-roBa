@@ -43,7 +43,7 @@ layers:
   - SPACE
   - BACKSPACE
   - ENTER
-  - {t: LEFT WIN, h: FUNCTION}
+  - LALT
   OHNISHI:
   - Q
   - L
@@ -219,7 +219,7 @@ layers:
   - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   SYSTEM:
   - ''
   - ''
