@@ -20,17 +20,17 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <0 1>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <10 11>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <11 12>;
         };
 
         parenthesises {
@@ -50,7 +50,7 @@
 
         system_layer {
             bindings = <&mo 5>;
-            key-positions = <22 23>;
+            key-positions = <3 4>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
@@ -122,7 +122,7 @@
 &kp Q             &kp W         &kp E         &kp R     &kp T                                             &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F     &kp G          &none            &tog 1       &kp H          &kp J  &kp K      &kp L    &kp DEL
 &kp Z             &kp X         &kp C         &kp V     &kp B          &kp LCTRL        &none        &kp N          &kp M  &kp MINUS  &kp COMMA  &kp DOT
-&kp LEFT_SHIFT    &kp LCTRL     &kp LEFT_WIN    &lt 2 LANG2    &lt 3 LANG1    &kp SPACE     &kp BACKSPACE    &kp ENTER                                  &kp LALT
+&kp LEFT_SHIFT    &kp LEFT_WIN     &kp LCTRL    &lt 2 LANG2    &lt 3 LANG1    &kp SPACE     &kp BACKSPACE    &kp ENTER                                  &kp LALT
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

@@ -36,8 +36,8 @@ layers:
   - ','
   - .
   - LEFT SHIFT
-  - LCTRL
   - LEFT WIN
+  - LCTRL
   - {t: LANG2, h: NUM}
   - {t: LANG1, h: SYMBOL}
   - SPACE
@@ -224,8 +224,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {type: held}
+  - {type: held}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -243,8 +243,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
-  - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -265,11 +265,11 @@ layers:
   - ''
   - ''
 combos:
-- p: [1, 2]
+- p: [0, 1]
   k: ESC
-- p: [11, 12]
+- p: [10, 11]
   k: TAB
-- p: [12, 13]
+- p: [11, 12]
   k: Sft+TAB
 - p: [19, 20]
   k: '&parenthesises'
@@ -277,7 +277,7 @@ combos:
   k: '&brackets'
 - p: [31, 32]
   k: '&braces'
-- p: [22, 23]
+- p: [3, 4]
   k: SYSTEM
   l: [QWERTY, OHNISHI]
 - p: [5, 6]
