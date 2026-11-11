@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - LCTRL
+  - '&td_desktop'
   - ''
   - N
   - M
