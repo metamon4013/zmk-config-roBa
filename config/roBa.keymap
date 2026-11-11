@@ -49,8 +49,8 @@
         };
 
         system_layer {
-            bindings = <&mo 5>;
-            key-positions = <3 4>;
+            bindings = <&mo 6>;
+            key-positions = <27 28>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
@@ -58,28 +58,21 @@
         bt_clr {
             bindings = <&bt BT_CLR>;
             key-positions = <5 6>;
-            layers = <5>;
+            layers = <6>;
             timeout-ms = <50>;
         };
 
         bt_clr_all {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <5 9>;
-            layers = <5>;
+            layers = <6>;
             timeout-ms = <50>;
         };
 
         boot {
             bindings = <&bootloader>;
             key-positions = <8 9>;
-            layers = <5>;
-            timeout-ms = <50>;
-        };
-
-        right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <38 39>;
-            layers = <4>;
+            layers = <6>;
             timeout-ms = <50>;
         };
     };
@@ -122,7 +115,7 @@
 &kp Q             &kp W         &kp E         &kp R     &kp T                                             &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F     &kp G          &none            &tog 1       &kp H          &kp J  &kp K      &kp L    &kp DEL
 &kp Z             &kp X         &kp C         &kp V     &kp B          &kp LCTRL        &none        &kp N          &kp M  &kp MINUS  &kp COMMA  &kp DOT
-&kp LEFT_SHIFT    &kp LEFT_WIN     &kp LCTRL    &lt 2 LANG2    &lt 3 LANG1    &kp SPACE     &kp BACKSPACE    &kp ENTER                                  &kp LALT
+&kp LEFT_SHIFT    &kp LEFT_WIN     &kp LCTRL    &lt 2 LANG2    &lt 3 LANG1    &kp SPACE     &kp BACKSPACE    &kp ENTER                                  &lt 5 LALT
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -141,9 +134,9 @@
 
         NUM {
             bindings = <
-&none        &none        &none      &none         &none                           &none      &none      &none      &none      &none
-&none        &none        &none      &none         &none     &none     &none       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-&kp LEFT     &kp DOWN     &kp UP     &kp RIGHT     &none     &trans    &trans      &kp N1     &kp N2     &kp N3     &kp N4     &kp N5
+&none        &kp END      &kp HOME   &none         &none                           &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
+&kp LEFT     &kp DOWN     &kp UP     &kp RIGHT     &none     &none     &none       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5
+&none        &none        &none      &none         &none     &trans    &trans      &none      &none      &none      &none      &none
 &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans                                        &trans
             >;
 
@@ -161,12 +154,21 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
+        CONTROL {
+            bindings = <
+&trans    &trans     &trans     &trans     &trans                              &trans    &trans      &trans      &trans       &trans
+&trans    &trans     &trans     &trans     &trans    &trans      &trans        &trans    &trans      &trans      &trans       &trans
+&trans    &trans     &trans     &trans     &trans    &kp PSCRN   &trans        &trans    &trans      &trans      &trans       &trans
+&trans    &trans     &trans     &mkp LCLK  &mkp LCLK  &mkp RCLK  &trans    &trans                                         &trans
+            >;
+        };
+
         FUNCTION {
             bindings = <
-&kp F1    &kp F2     &kp F3     &kp F4     &kp F5                              &kp F6    &kp F7      &kp F8      &kp F9       &kp F10
-&trans    &trans     &none      &none      &none     &none       &none         &none     &kp HOME    &kp UP      &kp END      &kp F11
-&trans    &trans     &trans     &trans     &none     &trans      &trans        &none     &kp LEFT    &kp DOWN    &kp RIGHT    &kp F12
-&trans    &trans     &trans     &trans     &trans       &mkp LCLK    &trans    &trans                                         &trans
+&kp F1    &kp F2     &kp F3     &kp F4     &kp F5                              &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
+&none     &none      &none      &none      &none     &none       &none         &none     &none     &none     &none     &kp F11
+&none     &none      &none      &none      &none     &trans      &trans        &none     &none     &none     &none     &kp F12
+&trans    &trans     &trans     &trans     &trans    &trans      &trans        &trans                                  &trans
             >;
         };
 
