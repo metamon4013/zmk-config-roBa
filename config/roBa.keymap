@@ -109,7 +109,7 @@
         td_desktop: td_desktop {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LG(LC(RIGHT))>, <&kp LG(LC(LEFT))>;
         };
     };
