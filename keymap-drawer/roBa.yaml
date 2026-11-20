@@ -221,40 +221,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUNCTION:
+  - ''
+  - BRI DN
+  - BRI UP
+  - ''
+  - ''
   - F1
-  - F2
-  - F3
   - F4
-  - F5
-  - F6
   - F7
-  - F8
-  - F9
   - F10
   - ''
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - Gui+Alt+K
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - F2
+  - F5
+  - F8
   - F11
   - ''
   - ''
   - ''
+  - PSCRN
   - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
+  - F3
+  - F6
+  - F9
   - F12
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
