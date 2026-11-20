@@ -17,10 +17,10 @@ layers:
   - F
   - G
   - ''
-  - {t: OHNISHI, h: toggle}
+  - ''
   - H
-  - J
-  - K
+  - '&mouse_gesture_kp 0 J'
+  - '&mouse_gesture_kp 0 K'
   - L
   - DEL
   - Z
@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - '&td_desktop'
+  - TAB
   - ''
   - N
   - M
@@ -90,39 +90,39 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - ''
-  - END
   - HOME
+  - END
   - ''
   - ''
-  - '6'
   - '7'
   - '8'
   - '9'
-  - '0'
+  - ''
+  - ''
   - LEFT
-  - DOWN
   - UP
+  - DOWN
   - RIGHT
   - ''
   - ''
   - ''
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
-  - '4'
-  - '5'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -204,19 +204,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PSCRN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp LCLK'
   - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&kp_exit_control LANG2', h: '&mo_exit_control 2'}
+  - {t: '&kp_exit_control LANG1', h: '&mo_exit_control 3'}
+  - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,10 +311,6 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
-- p: [10, 11]
-  k: TAB
-- p: [11, 12]
-  k: Sft+TAB
 - p: [19, 20]
   k: '&parenthesises'
 - p: [7, 8]
