@@ -19,8 +19,8 @@ layers:
   - ''
   - ''
   - H
-  - '&mouse_gesture_kp 0 J'
-  - '&mouse_gesture_kp 0 K'
+  - J
+  - K
   - L
   - DEL
   - Z
@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - TAB
-  - ''
+  - Ctl+LSHIFT
   - N
   - M
   - '-'
@@ -244,7 +244,7 @@ layers:
   - F11
   - ''
   - ''
-  - ''
+  - INT KATAKANAHIRAGANA
   - PSCRN
   - ''
   - ''
@@ -262,7 +262,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+ENTER
   - {type: held}
   SYSTEM:
   - ''
@@ -320,6 +320,12 @@ combos:
 - p: [27, 28]
   k: SYSTEM
   l: [QWERTY, OHNISHI]
+- p: [18, 19]
+  k: '&gesture_win_ctrl'
+  l: [QWERTY, OHNISHI, CONTROL]
+- p: [30, 31]
+  k: '&gesture_win'
+  l: [QWERTY, OHNISHI, CONTROL]
 - p: [5, 6]
   k: BT CLR
   l: [SYSTEM]

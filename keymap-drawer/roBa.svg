@@ -224,16 +224,12 @@ text.keypos-index {
 <g transform="translate(560, 92)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-23" y="-23" class="keypos-index">18</text>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;mouse_ges…</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">J</tspan>
-</text>
+<text x="0" y="0" class="key tap">J</text>
 </g>
 <g transform="translate(617, 84)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-23" y="-23" class="keypos-index">19</text>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;mouse_ges…</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">K</tspan>
-</text>
+<text x="0" y="0" class="key tap">K</text>
 </g>
 <g transform="translate(673, 98)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -278,6 +274,9 @@ text.keypos-index {
 <g transform="translate(448, 168)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-23" y="-23" class="keypos-index">28</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">LSHIFT</tspan>
+</text>
 </g>
 <g transform="translate(504, 155)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -382,6 +381,14 @@ text.keypos-index {
 <a href="#SYSTEM">
 <text x="378" y="168" class="combo tap layer-activator">SYSTEM</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;gesture_w…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;gesture_w…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-OHNISHI">
@@ -624,6 +631,14 @@ text.keypos-index {
 <a href="#SYSTEM">
 <text x="378" y="168" class="combo tap layer-activator">SYSTEM</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;gesture_w…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;gesture_w…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 678)" class="layer-NUM">
@@ -1322,6 +1337,14 @@ text.keypos-index {
 <rect rx="6" ry="6" x="631" y="134" width="28" height="26" class="combo"/>
 <text x="645" y="147" class="combo tap">&amp;braces</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;gesture_w…</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;gesture_w…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1694)" class="layer-FUNCTION">
@@ -1446,6 +1469,9 @@ text.keypos-index {
 <g transform="translate(84, 154)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-23" y="-23" class="keypos-index">23</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 64%">INT</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">KATAKANAHI…</tspan>
+</text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1529,10 +1555,12 @@ text.keypos-index {
 <text x="-23" y="-23" class="keypos-index">40</text>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(485, 230) rotate(-10.0)" class="key keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-23" y="-23" class="keypos-index">41</text>
-<text x="0" y="0" class="key trans tap">▽</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Alt+</tspan><tspan x="0" dy="1.2em">ENTER</tspan>
+</text>
 </g>
 <g transform="translate(729, 231)" class="key held keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>

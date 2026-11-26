@@ -23,30 +23,25 @@
     enable-eager-mode;
     suppress-movement;
 
-    desktop_next {
+    right {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(LC(RIGHT))>;
+        bindings = <&kp RIGHT>;
     };
 
-    desktop_prev {
+    left {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(LC(LEFT))>;
+        bindings = <&kp LEFT>;
     };
 
-    task_view {
+    up {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LG(TAB)>;
+        bindings = <&kp UP>;
     };
 
-    win {
+    down {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LEFT_WIN>;
+        bindings = <&kp DOWN>;
     };
-};
-
-&mouse_gesture_kp {
-    flavor = "tap-preferred";
-    tapping-term-ms = <300>;
 };
 
 / {
@@ -78,6 +73,18 @@
             key-positions = <27 28>;
             layers = <0 1>;
             timeout-ms = <50>;
+        };
+
+        gesture_win_ctrl {
+            bindings = <&gesture_win_ctrl>;
+            key-positions = <18 19>;
+            layers = <0 1 4>;
+        };
+
+        gesture_win {
+            bindings = <&gesture_win>;
+            key-positions = <30 31>;
+            layers = <0 1 4>;
         };
 
         bt_clr {
@@ -119,6 +126,26 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT_ARROW>;
+        };
+
+        gesture_win_ctrl: gesture_win_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LCTRL &mouse_gesture>
+                , <&macro_pause_for_release>
+                , <&macro_release &mouse_gesture &kp LCTRL &kp LGUI>
+                ;
+        };
+
+        gesture_win: gesture_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &mouse_gesture>
+                , <&macro_pause_for_release>
+                , <&macro_release &mouse_gesture &kp LGUI>
+                ;
         };
 
         mo_exit_control: mo_exit_control {
@@ -172,8 +199,8 @@
         QWERTY {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R     &kp T                                             &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F     &kp G          &none            &none        &kp H          &mouse_gesture_kp 0 J  &mouse_gesture_kp 0 K      &kp L    &kp DEL
-&kp Z             &kp X         &kp C         &kp V     &kp B          &kp TAB          &none        &kp N          &kp M  &kp MINUS  &kp COMMA  &kp DOT
+&kp A             &kp S         &kp D         &kp F     &kp G          &none            &none        &kp H          &kp J  &kp K      &kp L    &kp DEL
+&kp Z             &kp X         &kp C         &kp V     &kp B          &kp TAB          &kp LC(LSHIFT)  &kp N          &kp M  &kp MINUS  &kp COMMA  &kp DOT
 &kp LEFT_SHIFT    &kp LEFT_WIN     &kp LCTRL    &lt 2 LANG2    &lt 3 LANG1    &kp SPACE     &kp BACKSPACE    &kp ENTER                                  &lt 5 LALT
             >;
 
@@ -226,8 +253,8 @@
             bindings = <
 &none         &kp C_BRI_DN   &kp C_BRI_UP  &none         &none             &kp F1    &kp F4    &kp F7    &kp F10   &none
 &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp LG(LA(K)) &none     &none      &none         &kp F2    &kp F5    &kp F8    &kp F11   &none
-&none         &none          &kp PSCRN     &none         &none     &trans     &trans        &kp F3    &kp F6    &kp F9    &kp F12   &none
-&trans    &trans     &trans     &trans     &trans    &trans      &trans        &trans                                  &trans
+&none         &kp INT_KATAKANAHIRAGANA  &kp PSCRN     &none         &none     &trans     &trans        &kp F3    &kp F6    &kp F9    &kp F12   &none
+&trans    &trans     &trans     &trans     &trans    &trans      &trans        &kp LA(ENTER)                           &trans
             >;
         };
 
